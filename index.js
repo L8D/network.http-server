@@ -17,7 +17,7 @@ module.exports = function(handler) {
     throw new TypeError('Request handler ' + handler + ' is not a function');
   }
 
-  return function requestHandler(request, response, next) {
+  return function requestHandler(request, response, done) {
     if (typeof next !== 'function') {
       done = finalhandler(request, response);
     }
