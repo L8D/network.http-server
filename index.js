@@ -17,8 +17,11 @@ module.exports = function(handler) {
     throw new TypeError('Request handler ' + handler + ' is not a function');
   }
 
-  return function requestHandler(request, response) {
-    var done = finalhandler(request, response);
+  return function requestHandler(request, response, next) {
+    if (typeof next !== 'function') {
+      done = finalhandler(request, response);
+    }
+
     var urlData = url.parse(request.url, true);
 
     var ireq = Map({
