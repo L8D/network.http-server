@@ -12,14 +12,18 @@ var ires = Map({
   headers: Map()
 });
 
-module.exports = function(handler) {
+module.exports = function(handler, options) {
+  options = options || {};
+
+  var onerror = options.onerror || logError;
+
   if (typeof handler !== 'function') {
     throw new TypeError('Request handler ' + handler + ' is not a function');
   }
 
   return function requestHandler(request, response, done) {
     if (typeof next !== 'function') {
-      done = finalhandler(request, response);
+      done = finalhandler(request, response, {onerror: onerror});
     }
 
     var urlData = url.parse(request.url, true);
@@ -121,3 +125,7 @@ module.exports = function(handler) {
     });
   };
 };
+
+function logError(err) {
+  console.error(err.stack || err.toString());
+}
