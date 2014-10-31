@@ -18,7 +18,6 @@
   "dependencies": {
     "data.future": "^2.3.0",
     "finalhandler": "^0.3.0",
-    "immutable": "^2.3.2",
     "media-typer": "^0.3.0",
     "mime": "^1.2.11"
   }
