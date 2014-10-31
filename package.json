@@ -1,6 +1,6 @@
 {
   "name": "network.http-server",
-  "version": "0.0.2",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/folktale/network.http-server"
@@ -13,12 +13,11 @@
   ],
   "author": "Tenor Biel <tenorbiel@gmail.com>",
   "bugs": {
-    "url": "https://github.com/folktale/network.http-server"
+    "url": "https://github.com/folktale/network.http-server/issues"
   },
   "dependencies": {
     "data.future": "^2.3.0",
-    "finalhandler": "^0.3.0",
-    "immutable": "^2.3.2",
+    "finalhandler": "^0.3.2",
     "media-typer": "^0.3.0",
     "mime": "^1.2.11"
   }
