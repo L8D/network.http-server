@@ -13,7 +13,7 @@
   ],
   "author": "Tenor Biel <tenorbiel@gmail.com>",
   "bugs": {
-    "url": "https://github.com/folktale/network.http-server"
+    "url": "https://github.com/folktale/network.http-server/issues"
   },
   "dependencies": {
     "data.future": "^2.3.0",
