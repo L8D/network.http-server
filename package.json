@@ -18,6 +18,7 @@
   "dependencies": {
     "data.future": "^2.3.0",
     "finalhandler": "^0.3.2",
+    "lodash": "^2.4.1",
     "media-typer": "^0.3.0",
     "mime": "^1.2.11"
   }
