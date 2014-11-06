@@ -1,4 +1,4 @@
-network.http-server
+network.http-server [![Build Status](http://img.shields.io/travis/folktale/network.http-server.svg?style=flat)](https://travis-ci.org/folktale/network.http-server) [![NPM Version](http://img.shields.io/npm/v/network.http-server.svg?style=flat)](https://npmjs.org/package/network.http-server) [![License](http://img.shields.io/npm/l/network.http-server.svg?style=flat)](https://github.com/folktale/network.http-server/blob/master/LICENSE) [![devDependencies](http://img.shields.io/david/dev/folktale/network.http-server.svg?style=flat)](https://npmjs.org/package/network.http-server)
 ===================
 
 A library for creating functionally pure HTTP request handlers.
