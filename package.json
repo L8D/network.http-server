@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "supertest": "^0.14.0",
-    "tape": "^3.0.2"
+    "mocha": "^2.0.1"
   },
   "scripts": {
-    "test": "tape test"
+    "test": "mocha"
   }
 }
