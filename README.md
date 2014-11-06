@@ -8,9 +8,9 @@ Example
 
 ```javascript
 var Future = require('data.future');
-var createHandler = require('network.http-server');
+var create = require('network.http-server');
 
-var handler = makeHandler(function(req, res) {
+var handler = create(function(req, res) {
   return Future.of(res.status(200).type('txt').send('Hello World!'));
 });
 
