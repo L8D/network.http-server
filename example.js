@@ -1,3 +1,5 @@
+'use strict';
+
 var createHandler = require('./');
 var Future = require('data.future');
 var http = require('http');
