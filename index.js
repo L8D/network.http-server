@@ -19,7 +19,7 @@ module.exports = function(handler, options) {
       next = finalhandler(req, res, {onerror: onerror});
     }
 
-    var future = handler(req, Res(res.statusCode, res.headers));
+    var future = handler(req, new Res(res.statusCode, res.headers));
 
     if (!(future && typeof future.fork === 'function')) {
       throw new TypeError(future + ' is not a future');
