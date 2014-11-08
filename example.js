@@ -28,7 +28,7 @@ var handler = createHandler(function(req, res) {
     filepath += 'index.html';
   }
 
-  return read(filepath).fold(function(err) {
+  return read(filepath).fold(function() {
     return res.sendStatus(404);
   }, function(data) {
     return res.type(path.extname(filepath)).send(data);
