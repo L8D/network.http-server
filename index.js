@@ -1,8 +1,6 @@
 'use strict';
 
 var finalhandler = require('finalhandler');
-var typer = require('media-typer');
-var mime = require('mime');
 var Res = require('./lib/response');
 
 module.exports = function(handler, options) {
