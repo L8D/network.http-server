@@ -23,10 +23,12 @@
     "mime": "^1.2.11"
   },
   "devDependencies": {
-    "supertest": "^0.14.0",
-    "mocha": "^2.0.1"
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "supertest": "^0.14.0"
   },
   "scripts": {
-    "test": "mocha"
+    "lint": "jshint .",
+    "test": "npm run lint && mocha"
   }
 }
