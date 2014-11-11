@@ -1,9 +1,9 @@
 {
-  "name": "network.http-server",
+  "name": "net.http-server",
   "version": "0.2.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/folktale/network.http-server"
+    "url": "git://github.com/folktale/net.http-server"
   },
   "license": "MIT",
   "description": "A library for creating functionally pure HTTP request handlers.",
@@ -13,7 +13,7 @@
   ],
   "author": "Tenor Biel <tenorbiel@gmail.com>",
   "bugs": {
-    "url": "https://github.com/folktale/network.http-server/issues"
+    "url": "https://github.com/folktale/net.http-server/issues"
   },
   "dependencies": {
     "data.future": "^2.3.0",
